@@ -17,7 +17,7 @@ for i,caption in enumerate(captions):
     dr.rectangle((0,0,1440,70),fill='#eef3f7')
     dr.text((28,18),caption,font=font,fill='#19334b')
     dr.rectangle((0,1038,1440,1080),fill='#eef3f7')
-    dr.text((28,1048),'TBRTK | Uavhengige referanser | Prototype - fysisk validering gjenstaar',font=small,fill='#405467')
+    dr.text((28,1048),'TBRTK | Reference geometry | Prototype - physical validation pending',font=small,fill='#405467')
     frames.append(im.resize((960,720),Image.Resampling.LANCZOS))
 # A four-second final concept image is included after the CAD sequence.
 concept=Image.open(ROOT/'assets/images/complete-setup-person.png').convert('RGB')

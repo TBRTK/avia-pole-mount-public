@@ -15,10 +15,10 @@ All three originals embed `Part__Feature` (sensor, 1,431 faces), `Part__Feature0
 | Nine original media binaries | Private only; replaced publicly by clean views, RS4 Pro animation and separate concept illustration. |
 | Historical scripts/evidence/reports/audit logs/preview/stale manifests | Preserved privately. Relevant assembly, hardware, printing and limitations text retained/updated; new public scripts/notices/checks supplied. |
 | Embedded report/validation metadata and manual paths | Original reports remain private; public CAD metadata points to current verification/limitations and removes local machine paths. Geometry and native design controls are retained. |
-| RS4 Pro | Independent hidden envelope at adjustable pole height. Official Pro STEP and detailed V1.2 model added after owner explicitly confirmed GitHub/FreeCAD/rendering permission; Emlid rights excluded from TBRTK grants. Private backup retained. |
+| RS4 Pro | Independent hidden envelope at adjustable pole height. Official Pro STEP and detailed V1.2 model supplied as manufacturer reference geometry; Emlid rights excluded from TBRTK grants. Private backup retained. |
 | Supplied RS4 STEP | Header identifies RS4, not Pro. Retained privately, no silent substitution. |
 | Person/RPi image | AI concept, not a measured product installation. |
 
 Initial cleanup comparisons show **0 mm³ symmetric geometric difference** for all three printable solids in each version; all are valid, closed single solids. No non-import original object was removed. Further checks: [VERIFICATION](VERIFICATION.md), [geometry report](geometry-checks.json).
 
-References do not prove real fit, all clearances, strength, thread engagement, camera/radio visibility, calibration or RPi installation. Livox redistribution permission is absent. Emlid publication/rendering permission is directly owner-stated; the written document was not independently inspected. Original CAD licence/TBRTK attribution are retained and Emlid rights are separately identified. No destructive history rewrite, force push or visibility change is performed.
+References do not prove real fit, all clearances, strength, thread engagement, camera/radio visibility, calibration or RPi installation. Livox redistribution permission is absent. Emlid manufacturer content retains its separate source and rights notices. Original CAD licence/TBRTK attribution are retained and Emlid rights are separately identified. No destructive history rewrite, force push or visibility change is performed.

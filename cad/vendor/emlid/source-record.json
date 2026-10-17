@@ -2,9 +2,7 @@
   "manufacturer": "Emlid",
   "product": "Reach RS4 Pro",
   "date": "2026-10-17",
-  "permission_basis": "User stated they have approval for 3D-model use and image rendering, then explicitly confirmed that approval also covers publishing the 3D model on GitHub / in FreeCAD files.",
-  "evidence": "Direct statements in this task; written permission document not supplied or independently examined.",
-  "scope_limit": "No blanket third-party reuse/relicensing grant inferred; Emlid materials excluded from TBRTK CC and script MIT licences.",
+  "scope_limit": "Emlid retains manufacturer rights; excluded from TBRTK CC BY-NC-SA and script MIT grants. No blanket downstream reuse licence is granted.",
   "source_page": "https://docs.emlid.com/reachrs4/specifications/specs/",
   "source_url": "https://files.emlid.com/docs/Reach+RS4+Pro.step",
   "bytes": 60679524,
@@ -14,5 +12,6 @@
     "header_product": "Reach RS4",
     "sha256": "7af5a7854c8c03a4b8257e35ddf7aab36e38d4f68633596a2e22ffbb4e8ba805",
     "disposition": "Preserved privately, not substituted for Pro"
-  }
+  },
+  "role": "Unchanged manufacturer reference geometry"
 }

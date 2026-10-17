@@ -43,21 +43,21 @@ captions=[];fps=6
 def smooth(q):return q*q*(3-2*q)
 for i in range(84):
     t=i/fps;reset();stage=int(t//2);q=smooth((t%2)/2)
-    if stage==0:caption='Komplett oppsett / RS4 Pro over Avia'
+    if stage==0:caption='Complete setup / RS4 Pro above Avia'
     elif stage in [1,2]:
         hide(sensor+['AviaBracket',receiver,'SurveyPoleStudReference']+joint+closing)
         rear(100*q if stage==1 else 100*(1-q))
-        caption='Hengslet klemme / bevegelse kun illustrert'
+        caption='Hinged clamp / illustrative motion'
     elif stage==3:
         hide(sensor+[receiver,'SurveyPoleStudReference']);move(['AviaBracket']+joint,V(-70*(1-q),0,0))
-        caption='Avia-brakett settes paa konisk forbindelse'
+        caption='Avia bracket seats on the tapered joint'
     elif stage==4:
         hide([receiver]);move(sensor,normal*(65*(1-q)))
-        caption='Avia monteres / fast 20 grader nedover'
+        caption='Avia installation / fixed 20-degree downward tilt'
     elif stage==5:
         move([receiver],V(0,0,70*(1-q)))
-        caption='Reach RS4 Pro paa stangens 5/8 UNC-feste'
-    else:caption='Komplett oppsett / Emlid CAD og egenbygd Avia-referanse'
+        caption='Reach RS4 Pro on the pole 5/8 UNC mount'
+    else:caption='Complete setup / Emlid CAD and independent Avia reference'
     Gui.updateGui();view.saveImage(str(frames/('frame-%03d.png'%i)),1440,1080,'White')
     captions.append(caption)
 reset()

@@ -6,6 +6,6 @@
   "original_repository": "TBRTK/avia-pole-mount",
   "original_visibility": "Private, retained",
   "publication_authorization": "Direct user request to create a new public GitHub repository with the cleaned version",
-  "Emlid_permission": "Owner explicitly confirmed GitHub/FreeCAD model publication and rendering; written approval not independently inspected",
-  "CAD_and_media": "Copied byte-identically from the verified cleaned export; only publication documentation and manifest updated"
+  "CAD_and_media": "Initial export copied from the verified cleaned package. Prototype release translates metadata/media to English and updates the concept image; CAD geometry and bracket exports remain unchanged.",
+  "emlid_rights": "Manufacturer reference geometry; separate Emlid copyright and terms; outside project CC/MIT grants."
 }

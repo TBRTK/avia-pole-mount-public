@@ -1,0 +1,44 @@
+{
+  "release": "v1.2.0-prototype.1",
+  "language": "English",
+  "cad": {
+    "Avia_PoleMount_35mm_V1.0_Public.FCStd": {
+      "non_document_members_byte_identical": true,
+      "English_metadata_scan": "passed",
+      "final_reopen_force_recompute": "passed",
+      "print_parts_valid_closed_single_solids": 3
+    },
+    "Avia_PoleMount_35mm_V1.1_Public.FCStd": {
+      "non_document_members_byte_identical": true,
+      "English_metadata_scan": "passed",
+      "final_reopen_force_recompute": "passed",
+      "print_parts_valid_closed_single_solids": 3
+    },
+    "Avia_PoleMount_35mm_V1.2_Public.FCStd": {
+      "non_document_members_byte_identical": true,
+      "English_metadata_scan": "passed",
+      "final_reopen_force_recompute": "passed",
+      "print_parts_valid_closed_single_solids": 3
+    }
+  },
+  "six_original_bracket_exports_byte_identical": true,
+  "manufacturer_emlid_STEP_source_hash_matches": true,
+  "Python_script_syntax": "passed",
+  "local_markdown_links": "passed",
+  "media": {
+    "GIF_frames_decoded": 64,
+    "duration_ms": 18000,
+    "PNG_dimensions": [
+      1024,
+      1536
+    ],
+    "English_captions_contact_sheet_visual_review": "passed",
+    "final_image": "User-selected concept illustration; RPi enclosure below gripping hand"
+  },
+  "limits": [
+    "Metadata/media release; printable geometry unchanged.",
+    "Reopen/recompute verification is recorded separately in reopen-checks.json.",
+    "Concept image is not a dimensioned RPi enclosure or pole assembly.",
+    "Physical prototype validation remains pending."
+  ]
+}

@@ -1,6 +1,6 @@
 # V1.2 assembly
 
-**Geometrically checked prototype — physical validation pending.** Dimensions are mm. Read the [hardware list](HARDWARE.md). No approved tightening torque is specified. Trial with a dummy sensor/load before service.
+**Geometrically checked prototype — physical validation pending.** Dimensions are mm. Read the [hardware list](HARDWARE.md). No qualified tightening torque is specified. Trial with a dummy sensor/load before service.
 
 1. Clean and measure the trial prints. Remove support/elephant foot from bores, nut seats, cone flanks and four 0.4 mm hinge gaps. Check usable smooth shoulder length, transitions and real hardware dimensions.
 2. While the front clamp is loose and its pole groove is accessible, insert **two DIN934 M5 cone nuts from the open pole groove**. Insert the other two DIN934 M5 nuts in the closing-side front pockets. The pole must not block this operation.

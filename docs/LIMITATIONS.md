@@ -1,6 +1,6 @@
 # Limitations and physical validation
 
-**Geometrically checked prototype — physical validation pending.** PETG is provisional. CAD clearance, valid solids, sampled motion and calculated loads do not establish strength, lasting freedom from play, material approval or safe working load. No tightening torque is specified. Four-bolt clamp capacity assumptions do not apply to V1.2.
+**Geometrically checked prototype — physical validation pending.** PETG is provisional. CAD clearance, valid solids, sampled motion and calculated loads do not establish strength, lasting freedom from play, material qualification or safe working load. No tightening torque is specified. Four-bolt clamp capacity assumptions do not apply to V1.2.
 
 Before actual sensor use, document:
 

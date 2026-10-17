@@ -4,9 +4,9 @@
   "print_export_files_byte_identical": 6,
   "manufacturer_livox_BREP_absent": true,
   "emlid_official_STEP_byte_identical": true,
-  "emlid_permission": "direct owner confirmation for model publication / FreeCAD / rendering; written document not independently inspected",
   "links_scripts_archives_media": "passed",
   "user_RS4_download_unchanged": true,
   "destructive_history_rewrite": false,
-  "visibility_change": false
+  "visibility_change": false,
+  "emlid_rights": "Manufacturer reference geometry; separate Emlid copyright and terms; outside project CC/MIT grants."
 }
