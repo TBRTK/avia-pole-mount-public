@@ -6,6 +6,10 @@ TBRTK's survey-pole bracket for Livox Avia, with a **Reach RS4 Pro reference on 
 
 **Prototype: physical validation pending.** No load rating or tightening torque is established. The receiver is carried by the pole; this change does not qualify the complete system.
 
+## Companion software
+
+[Livox Avia Raspberry Pi Logger](https://github.com/TBRTK/Livox-avia-rpi-logger) is the companion software repository for recording and monitoring on the Raspberry Pi. The planned web interface and API will be developed there alongside the logger; they are not included in the current logger v1.0. This repository contains the CAD models, print files and mounting documentation.
+
 ## First prototype release
 
 [v1.2.0-prototype.1](https://github.com/TBRTK/avia-pole-mount-public/releases/tag/v1.2.0-prototype.1) provides one ZIP with all FreeCAD, STEP and STL files, documentation, animation and the complete-setup illustration. The English animation and illustration are also available as separate downloads, with SHA256 checksums. Start with the V1.2 FreeCAD file; V1.0/V1.1 are historical designs.
