@@ -1,0 +1,11 @@
+{
+  "date": "2026-10-17",
+  "repository": "https://github.com/TBRTK/avia-pole-mount-public",
+  "source": "Verified cleaned export; 55 files before publication documentation updates",
+  "history": "New root commit, no parents, not a fork; old .git directories and objects excluded",
+  "original_repository": "TBRTK/avia-pole-mount",
+  "original_visibility": "Private, retained",
+  "publication_authorization": "Direct user request to create a new public GitHub repository with the cleaned version",
+  "Emlid_permission": "Owner explicitly confirmed GitHub/FreeCAD model publication and rendering; written approval not independently inspected",
+  "CAD_and_media": "Copied byte-identically from the verified cleaned export; only publication documentation and manifest updated"
+}

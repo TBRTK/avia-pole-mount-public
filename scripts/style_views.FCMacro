@@ -1,0 +1,28 @@
+# SPDX-License-Identifier: MIT
+# Run this macro from the package's scripts folder. Sources are already clean.
+from pathlib import Path
+import FreeCAD as App, FreeCADGui as Gui
+ROOT=Path(__file__).resolve().parents[1]
+for path in sorted((ROOT/'cad').glob('*_Public.FCStd')):
+    d=App.openDocument(str(path))
+    for o in d.Objects:
+        if o.ViewObject:o.ViewObject.Visibility=False
+    names=['ClampFront','ClampRear','AviaBracket','Rod35Reference']
+    names += [o.Name for o in d.MetalFasteners.Group]
+    names += (['V12_SensorReference',('EmlidRS4ProOfficial' if d.getObject('EmlidRS4ProOfficial') else 'RS4ProReference')] if d.getObject('V12_SensorReference') else ['IndependentAviaEnvelope'])
+    for name in names:
+        o=d.getObject(name)
+        o.ViewObject.Visibility=True
+        o.ViewObject.ShapeColor=((0.12,0.43,0.70) if name.startswith('Clamp') and name in ['ClampFront','ClampRear'] else
+                                 (0.93,0.38,0.12) if name=='AviaBracket' else
+                                 (0.88,0.90,0.93) if name=='RS4ProReference' else
+                                 (0.28,0.33,0.40) if 'AviaEnvelope' in name or name=='V12_SensorReference' else
+                                 (0.57,0.63,0.68))
+        o.ViewObject.DisplayMode='Flat Lines'
+        o.ViewObject.LineColor=(0.12,0.16,0.20)
+    d.recompute()
+    Gui.activeDocument().activeView().viewAxonometric()
+    Gui.activeDocument().activeView().fitAll()
+    d.save()
+    App.closeDocument(d.Name)
+# The task launcher adds its own exit instruction; normal use leaves FreeCAD open.

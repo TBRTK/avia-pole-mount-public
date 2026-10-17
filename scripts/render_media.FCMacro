@@ -1,0 +1,68 @@
+# SPDX-License-Identifier: MIT
+# Run inside FreeCAD GUI; creates a separate scene and never saves source CAD.
+from pathlib import Path
+import FreeCAD as App,FreeCADGui as Gui,math,json
+ROOT=Path(__file__).resolve().parents[1]
+frames=ROOT.parent/'render-work';frames.mkdir(exist_ok=True)
+src=App.openDocument(str(ROOT/'cad/Avia_PoleMount_35mm_V1.2_Public.FCStd'))
+scene=App.newDocument('Independent_Public_Animation')
+receiver='EmlidRS4ProOfficial' if src.getObject('EmlidRS4ProOfficial') else 'RS4ProReference'
+names=['ClampFront','ClampRear','AviaBracket','V12_SensorReference','Rod35Reference',receiver,'SurveyPoleStudReference']
+names += [o.Name for o in src.MetalFasteners.Group]
+base={}
+for name in names:
+    a=src.getObject(name);o=scene.addObject('Part::Feature',name);o.Shape=a.Shape.copy()
+    o.ViewObject.ShapeColor=a.ViewObject.ShapeColor
+    o.ViewObject.DiffuseColor=a.ViewObject.DiffuseColor
+    o.ViewObject.DisplayMode='Flat Lines';o.ViewObject.LineColor=(0.13,0.17,0.22);o.ViewObject.LineWidth=1
+    base[name]=App.Placement(o.Placement)
+view=Gui.activeDocument().activeView();view.setCameraType('Orthographic')
+V=App.Vector
+normal=V(-math.sin(math.radians(20)),0,math.cos(math.radians(20)))
+closing=['ClampM5Bolt3','ClampM5Bolt4','ClampM5Washer3','ClampM5Washer4']
+joint=['JointM5Bolt1','JointM5Bolt2','JointM5Washer1','JointM5Washer2']
+m3=[n for n in names if n.startswith('V12_M3')]
+sensor=['V12_SensorReference']+m3
+def move(ns,v):
+    for n in ns:scene.getObject(n).Placement=App.Placement(v,App.Rotation()).multiply(base[n])
+def reset():
+    for n in names:
+        scene.getObject(n).Placement=App.Placement(base[n]);scene.getObject(n).Visibility=True
+def hide(ns):
+    for n in ns:scene.getObject(n).Visibility=False
+def rear(deg):
+    h=V(132.8,16.8,0);r=App.Rotation(V(0,0,1),-deg)
+    scene.ClampRear.Placement=App.Placement(h-r.multVec(h),r).multiply(base['ClampRear'])
+view.setCameraOrientation(App.Rotation(V(1,1,0),V(0,0,1),V(1,-1,.6),'ZXY').Q)
+# Fit all extreme poses once; the camera is fixed for the complete sequence.
+move([receiver],V(0,0,70));move(sensor,normal*65);move(['AviaBracket']+joint,V(-70,0,0));rear(100)
+view.fitAll();Gui.updateGui();reset()
+ROOT.joinpath('assets/images').mkdir(parents=True,exist_ok=True)
+view.saveImage(str(ROOT/'assets/images/public-assembly.png'),1440,1080,'White')
+captions=[];fps=6
+def smooth(q):return q*q*(3-2*q)
+for i in range(84):
+    t=i/fps;reset();stage=int(t//2);q=smooth((t%2)/2)
+    if stage==0:caption='Komplett oppsett / RS4 Pro over Avia'
+    elif stage in [1,2]:
+        hide(sensor+['AviaBracket',receiver,'SurveyPoleStudReference']+joint+closing)
+        rear(100*q if stage==1 else 100*(1-q))
+        caption='Hengslet klemme / bevegelse kun illustrert'
+    elif stage==3:
+        hide(sensor+[receiver,'SurveyPoleStudReference']);move(['AviaBracket']+joint,V(-70*(1-q),0,0))
+        caption='Avia-brakett settes paa konisk forbindelse'
+    elif stage==4:
+        hide([receiver]);move(sensor,normal*(65*(1-q)))
+        caption='Avia monteres / fast 20 grader nedover'
+    elif stage==5:
+        move([receiver],V(0,0,70*(1-q)))
+        caption='Reach RS4 Pro paa stangens 5/8 UNC-feste'
+    else:caption='Komplett oppsett / Emlid CAD og egenbygd Avia-referanse'
+    Gui.updateGui();view.saveImage(str(frames/('frame-%03d.png'%i)),1440,1080,'White')
+    captions.append(caption)
+reset()
+f=scene.addObject('Part::Feature','IndependentFOVDisplay');f.Shape=src.V12_FOVReference.Shape.copy()
+f.ViewObject.DisplayMode='Wireframe';f.ViewObject.LineColor=(.12,.65,.48);f.ViewObject.LineWidth=2
+view.fitAll();Gui.updateGui();view.saveImage(str(ROOT/'assets/images/public-fov.png'),1440,1080,'White')
+(frames/'captions.json').write_text(json.dumps(captions))
+App.closeDocument(scene.Name);App.closeDocument(src.Name)

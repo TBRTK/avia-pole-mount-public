@@ -1,0 +1,112 @@
+{
+  "Avia_PoleMount_35mm_V1.0_Public.FCStd": {
+    "objects": 199,
+    "recompute_errors": [],
+    "print_solids": {
+      "ClampFront": {
+        "volume_mm3": 48992.433167130774,
+        "faces": 83,
+        "valid_closed_single": true
+      },
+      "ClampRear": {
+        "volume_mm3": 36302.13427321166,
+        "faces": 20,
+        "valid_closed_single": true
+      },
+      "AviaBracket": {
+        "volume_mm3": 55516.070792211816,
+        "faces": 62,
+        "valid_closed_single": true
+      }
+    },
+    "independent_reference_faces": 14,
+    "independent_length_parameter_rebuild": "passed, printable geometry unchanged"
+  },
+  "Avia_PoleMount_35mm_V1.1_Public.FCStd": {
+    "objects": 207,
+    "recompute_errors": [],
+    "print_solids": {
+      "ClampFront": {
+        "volume_mm3": 48581.819846476195,
+        "faces": 81,
+        "valid_closed_single": true
+      },
+      "ClampRear": {
+        "volume_mm3": 36302.13427321166,
+        "faces": 20,
+        "valid_closed_single": true
+      },
+      "AviaBracket": {
+        "volume_mm3": 62390.00221629674,
+        "faces": 64,
+        "valid_closed_single": true
+      }
+    },
+    "independent_reference_faces": 14,
+    "independent_length_parameter_rebuild": "passed, printable geometry unchanged"
+  },
+  "Avia_PoleMount_35mm_V1.2_Public.FCStd": {
+    "objects": 296,
+    "recompute_errors": [],
+    "print_solids": {
+      "ClampFront": {
+        "volume_mm3": 44396.86935579825,
+        "faces": 101,
+        "valid_closed_single": true
+      },
+      "ClampRear": {
+        "volume_mm3": 31337.915606734,
+        "faces": 37,
+        "valid_closed_single": true
+      },
+      "AviaBracket": {
+        "volume_mm3": 64344.07652488625,
+        "faces": 62,
+        "valid_closed_single": true
+      }
+    },
+    "independent_reference_faces": 14,
+    "independent_length_parameter_rebuild": "passed, printable geometry unchanged",
+    "receiver_height_parameter_rebuild": "passed; pole top and receiver base move together",
+    "official_emlid": {
+      "faces": 4876,
+      "solids": 11,
+      "vertex_bounds_mm": [
+        [
+          68.499247425444,
+          197.09902712705994
+        ],
+        [
+          -15.994323554819038,
+          112.59283168397118
+        ],
+        [
+          109.99999999999999,
+          209.26096713759995
+        ]
+      ],
+      "height_parameter_rebuild": "passed"
+    },
+    "display_reference_overlap_mm3": {
+      "ClampFront": 0.0,
+      "ClampRear": 0.0,
+      "AviaBracket": 0.0,
+      "V12_SensorReference": 0.0,
+      "V12_FOVReference": 0.0
+    },
+    "native_sensor_tilt_parameter_rebuild": "22 deg passed; reset to 20 deg",
+    "native_hinge_parameter_rebuild": "15 deg passed; reset to 0 deg",
+    "exports": {
+      "ClampFront": {
+        "STEP_symmetric_difference_mm3": 0.0
+      },
+      "ClampRear": {
+        "STEP_symmetric_difference_mm3": 0.0
+      },
+      "AviaBracket": {
+        "STEP_symmetric_difference_mm3": 0.0
+      }
+    },
+    "STL_closed_single_component": "3 passed"
+  }
+}

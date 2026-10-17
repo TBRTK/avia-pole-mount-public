@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+*.FCBak
+*.FCStd[0-9]
+*.bak
+*.tmp
+.env
+.env.*
+private-audit/
+manufacturer/
+render-work/
+*.bundle
+*.zip
+# No downloaded manufacturer CAD in public content.
+*Reach+RS4*.step
+Livox_Avia_shell_FOV.stp

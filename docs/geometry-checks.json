@@ -1,0 +1,149 @@
+{
+  "Avia_PoleMount_35mm_V1.0_Public.FCStd": {
+    "preserved_print_parts": {
+      "ClampFront": {
+        "valid": true,
+        "closed": true,
+        "solids": 1,
+        "volume_mm3": 48992.433167130774,
+        "symmetric_difference_mm3": 0.0
+      },
+      "ClampRear": {
+        "valid": true,
+        "closed": true,
+        "solids": 1,
+        "volume_mm3": 36302.13427321166,
+        "symmetric_difference_mm3": 0.0
+      },
+      "AviaBracket": {
+        "valid": true,
+        "closed": true,
+        "solids": 1,
+        "volume_mm3": 55516.070792211816,
+        "symmetric_difference_mm3": 0.0
+      }
+    },
+    "removed_import_objects": [
+      "Part__Feature",
+      "Part__Feature001",
+      "Part__Feature002",
+      "LIVOX_AVIA",
+      "LIVOX_AVIA_ASM",
+      "X_Axis",
+      "Y_Axis",
+      "Z_Axis",
+      "XY_Plane",
+      "XZ_Plane",
+      "YZ_Plane",
+      "Origin001",
+      "Origin",
+      "X_Axis001",
+      "Y_Axis001",
+      "Z_Axis001",
+      "XY_Plane001",
+      "XZ_Plane001",
+      "YZ_Plane001",
+      "Origin003",
+      "Origin002"
+    ],
+    "old_reference_BREP_absent": true
+  },
+  "Avia_PoleMount_35mm_V1.1_Public.FCStd": {
+    "preserved_print_parts": {
+      "ClampFront": {
+        "valid": true,
+        "closed": true,
+        "solids": 1,
+        "volume_mm3": 48581.819846476195,
+        "symmetric_difference_mm3": 0.0
+      },
+      "ClampRear": {
+        "valid": true,
+        "closed": true,
+        "solids": 1,
+        "volume_mm3": 36302.13427321166,
+        "symmetric_difference_mm3": 0.0
+      },
+      "AviaBracket": {
+        "valid": true,
+        "closed": true,
+        "solids": 1,
+        "volume_mm3": 62390.00221629674,
+        "symmetric_difference_mm3": 0.0
+      }
+    },
+    "removed_import_objects": [
+      "Part__Feature",
+      "Part__Feature001",
+      "Part__Feature002",
+      "LIVOX_AVIA",
+      "LIVOX_AVIA_ASM",
+      "X_Axis",
+      "Y_Axis",
+      "Z_Axis",
+      "XY_Plane",
+      "XZ_Plane",
+      "YZ_Plane",
+      "Origin001",
+      "Origin",
+      "X_Axis001",
+      "Y_Axis001",
+      "Z_Axis001",
+      "XY_Plane001",
+      "XZ_Plane001",
+      "YZ_Plane001",
+      "Origin003",
+      "Origin002"
+    ],
+    "old_reference_BREP_absent": true
+  },
+  "Avia_PoleMount_35mm_V1.2_Public.FCStd": {
+    "preserved_print_parts": {
+      "ClampFront": {
+        "valid": true,
+        "closed": true,
+        "solids": 1,
+        "volume_mm3": 44396.86935579825,
+        "symmetric_difference_mm3": 0.0
+      },
+      "ClampRear": {
+        "valid": true,
+        "closed": true,
+        "solids": 1,
+        "volume_mm3": 31337.915606734,
+        "symmetric_difference_mm3": 0.0
+      },
+      "AviaBracket": {
+        "valid": true,
+        "closed": true,
+        "solids": 1,
+        "volume_mm3": 64344.07652488625,
+        "symmetric_difference_mm3": 0.0
+      }
+    },
+    "removed_import_objects": [
+      "Part__Feature",
+      "Part__Feature001",
+      "Part__Feature002",
+      "LIVOX_AVIA",
+      "LIVOX_AVIA_ASM",
+      "X_Axis",
+      "Y_Axis",
+      "Z_Axis",
+      "XY_Plane",
+      "XZ_Plane",
+      "YZ_Plane",
+      "Origin001",
+      "Origin",
+      "X_Axis001",
+      "Y_Axis001",
+      "Z_Axis001",
+      "XY_Plane001",
+      "XZ_Plane001",
+      "YZ_Plane001",
+      "Origin003",
+      "Origin002"
+    ],
+    "old_reference_BREP_absent": true
+  }
+}
