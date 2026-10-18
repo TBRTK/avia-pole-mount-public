@@ -51,3 +51,7 @@ If this project has been useful to you and you would like to support further tes
 [☕ Buy me a coffee](https://buymeacoffee.com/tb_rtk)
 
 Support is completely optional and is greatly appreciated.
+
+## License
+
+See [LICENSE](LICENSE).
