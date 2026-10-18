@@ -43,3 +43,10 @@ Own CAD/reference designs and print geometry: **TBRTK, CC BY-NC-SA 4.0**. Credit
 **This public repository starts with a new root commit containing only the cleaned export.** It is not a fork and has no ancestry from the original private project. The original repository and its mixed-content history remain private and unchanged. Do not merge old private branches or push old tags here. [Audit](docs/CLEANUP_AUDIT.md) · [publication record](docs/PUBLICATION.md) · [history procedure](docs/HISTORY_CLEANUP.md).
 
 [Verification](docs/VERIFICATION.md) · [SHA256 manifest](SHA256SUMS.txt) · [public project](https://github.com/TBRTK/avia-pole-mount-public).
+
+Support
+If this project has been useful to you and you would like to support further testing, documentation, and development, you can buy me a coffee:
+
+☕ Buy me a coffee
+
+Support is completely optional and is greatly appreciated.
