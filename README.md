@@ -44,9 +44,10 @@ Own CAD/reference designs and print geometry: **TBRTK, CC BY-NC-SA 4.0**. Credit
 
 [Verification](docs/VERIFICATION.md) · [SHA256 manifest](SHA256SUMS.txt) · [public project](https://github.com/TBRTK/avia-pole-mount-public).
 
-Support
+## Support
+
 If this project has been useful to you and you would like to support further testing, documentation, and development, you can buy me a coffee:
 
-☕ Buy me a coffee
+[☕ Buy me a coffee](https://buymeacoffee.com/tb_rtk)
 
 Support is completely optional and is greatly appreciated.
